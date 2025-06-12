@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import './App.css'
-import NavBar from './components/Navbar'
+import NavBar from './components/navbar.tsx'
 import imageLight from "./assets/emerald.webp";
 import imageDark from './assets/pika.webp';
 import cysaLogo from './assets/cysaLogo.jpg';
