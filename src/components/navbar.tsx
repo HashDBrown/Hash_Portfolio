@@ -1,5 +1,6 @@
 // src/components/Navbar.tsx
 import { useState } from "react";
+import { Icon } from "@iconify/react/dist/iconify.js";
 
 interface NavBarProps {
   brandName: string;
@@ -17,7 +18,7 @@ function Navbar({ brandName, imageSrcPath, navItems }: NavBarProps) {
         <div className="flex justify-between h-16 items-center">
           {/* Brand */}
           <div className="flex items-center space-x-2">
-            <img src={imageSrcPath} alt="Logo" className="w-10 h-10 rounded-full" />
+            <img src={imageSrcPath} alt="Logo" className="w-10 h-10" />
             <span className="ruby-font text-xl font-bold text-gray-800 dark:text-white">{brandName}</span>
           </div>
 
@@ -26,7 +27,7 @@ function Navbar({ brandName, imageSrcPath, navItems }: NavBarProps) {
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="text-gray-800 dark:text-white hover:text-blue-600 focus:outline-none"
+              className="text-gray-100 dark:text-white hover:text-blue-600 focus:outline-none"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {isOpen ? (
@@ -43,15 +44,32 @@ function Navbar({ brandName, imageSrcPath, navItems }: NavBarProps) {
             {navItems.map((item, index) => (
               <a
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                href={item === "Github"
+                  ? "https://github.com/hashdbrown"
+                  : item === "LinkedIn"
+                  ? "https://linkedin.com/in/hashim-alkhateeb"
+                  : `#${item.toLowerCase()}`
+                }
+                target={item === "Github" ? "_blank" : "_self"}
+                rel={item === "Github" ? "noopener noreferrer" : undefined}
                 onClick={() => setSelectedIndex(index)}
-                className={`ruby-font text-sm font-medium ${
+                className={`ruby-font !mr-0 text-sm font-medium ${
                   selectedIndex === index
                     ? "text-blue-600 dark:text-pink-100"
                     : "text-gray-700 dark:text-gray-300"
                 } hover:text-green-700 transition`}
               >
-                {item}
+                {item === "Github" ? (
+                  <>
+                    <Icon icon="grommet-icons:github" width="20" height="20" />
+                  </>
+                ) : item === "LinkedIn" ? (
+                  <>
+                    <Icon icon="grommet-icons:linkedin" width="20" height="20" />
+                  </>
+                ) : (
+                  item
+                )}
               </a>
             ))}
           </div>
