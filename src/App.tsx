@@ -205,7 +205,43 @@ function App() {
                   Projects
                 </h2>
 
-              <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-1 rounded-xl transition-all duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 hover:scale-105 !opacity-90 hover:!opacity-100">
+              <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-6 rounded-xl transition-all duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 hover:scale-105 !opacity-90 hover:!opacity-100">
+                <span className="col-span-1">2025</span>
+                <div className="col-span-3">
+                  <h3 className="text-lg font-semibold text-black dark:text-white mt-0">
+                    Portfolio Website
+                  </h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+                    Designed and developed a personal portfolio website to showcase my work and resume using React, TypeScript, TailwindCSS, and UnoCSS. Implemented light/dark theme toggle, animated UI interactions, and responsive design. Deployed using Vite and Vercel.
+                  </p>
+                </div>
+
+                <div className="skills flex flex-wrap gap-4 mt-4 items-center">
+                  <div className="flex items-center gap-1">
+                    <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" className="w-5 h-5" />
+                    <span className="text-sm text-gray-800 dark:text-gray-100">React</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="TailwindCSS" className="w-5 h-5" />
+                    <span className="text-sm text-gray-800 dark:text-gray-100">Tailwind</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="TypeScriptt" className="w-5 h-5" />
+                    <span className="text-sm text-gray-800 dark:text-gray-100">TypeScript</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <img src="https://cdn.simpleicons.org/vercel/000000" alt="Vercel" className="w-5 h-5" />
+                    <span className="text-sm text-gray-800 dark:text-gray-100">Vercel</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <img src="https://cdn.simpleicons.org/unocss/333333" alt="UnoCSS" className="w-5 h-5" />
+                    <span className="text-sm text-gray-800 dark:text-gray-100">UnoCSS</span>
+                  </div>
+                </div>
+              </div>
+
+
+              <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-6 rounded-xl transition-all duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 hover:scale-105 !opacity-90 hover:!opacity-100">
                 <span className=" col-span-1">2024 — 2025</span>
                 <div className=" col-span-3">
                   <h3 className="text-lg font-semibold text-black dark:text-white mt-0">
@@ -230,12 +266,16 @@ function App() {
                     <span className="text-sm text-gray-800 dark:text-gray-100">Jira</span>
                   </div>
                   <div className="flex items-center gap-1">
-                    <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" className="w-5 h-5" />
-                    <span className="text-sm text-gray-800 dark:text-gray-100">React</span>
+                    <img src="https://cdn.simpleicons.org/slack/4A154B" alt="Slack" className="w-5 h-5" />
+                    <span className="text-sm text-gray-800 dark:text-gray-100">Slack</span>
                   </div>
                   <div className="flex items-center gap-1">
-                    <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="TailwindCSS" className="w-5 h-5" />
-                    <span className="text-sm text-gray-800 dark:text-gray-100">Tailwind</span>
+                    <img src="https://cdn.simpleicons.org/androidstudio/3DDC84" alt="AndroidStudio" className="w-5 h-5" />
+                    <span className="text-sm text-gray-800 dark:text-gray-100">Android Studio</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <img src="https://cdn.simpleicons.org/git/F05032" alt="Git" className="w-5 h-5" />
+                    <span className="text-sm text-gray-800 dark:text-gray-100">Git</span>
                   </div>
                 </div>
 
