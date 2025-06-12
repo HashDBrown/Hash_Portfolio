@@ -7,12 +7,14 @@ import cysaLogo from './assets/cysaLogo.jpg';
 import secLogo from './assets/secLogo.png';
 import csapLogo from './assets/CompTIA_CSAP.png'
 import 'virtual:uno.css'
+import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 // import Github from 'grommet-icons'
 
 
 function App() {
-  let items = ["Certs", "Experience", "Projects", "Contact", "Resume", "LinkedIn", "Github"];
+  let items = ["Certs", "Experience", "Projects", "Education", "Contact", "Resume", "LinkedIn", "Github"];
   const [darkMode, setDarkMode] = useState(true);
 
   // Toggle dark mode and update <html> class
@@ -213,8 +215,6 @@ function App() {
                   </p>
                 </div>
               </div>
-
-
               </section>
 
               <section
@@ -297,10 +297,49 @@ function App() {
                     <span className="text-sm text-gray-800 dark:text-gray-100">Git</span>
                   </div>
                 </div>
-
               </div>
-
               </section>
+
+
+              <section
+                id="education"
+                className="max-w-5xl mx-auto px-6 md:px-0 mb-3 slide-enter-content"
+              >
+                <h2 className="titles text-left text-black dark:text-white mb-4">
+                  Education
+                </h2>
+
+                <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-1 mb-6 rounded-xl transition-all duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 hover:scale-105 !opacity-90 hover:!opacity-100 hover:bg-gray-100/50 dark:hover:bg-gray-900/50">
+                  {/* Graduation Years */}
+                  <span className="col-span-1">2025 — 2026</span>
+                  {/* Degree Info */}
+                  <div className="col-span-3">
+                    <h3 className="text-lg font-semibold flex items-center gap-2 text-black dark:text-white mt-0">
+                      <i className="fa-solid fa-spinner text-lg text-gray-800 dark:text-white"></i>
+                      Master of Science in Computer Science · University of Central Florida
+                    </h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-300 mt-1 mb-0">
+                      Currently pursuing a master's degree at UCF. Focus on advanced cybersecurity courses.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-1 mb-6 rounded-xl transition-all duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 hover:scale-105 !opacity-90 hover:!opacity-100 hover:bg-gray-100/50 dark:hover:bg-gray-900/50">
+                  {/* Graduation Years */}
+                  <span className="col-span-1">2021 — 2025</span>
+                  {/* Degree Info */}
+                  <div className="col-span-3">
+                    <h3 className="text-lg font-semibold flex items-center gap-2 text-black dark:text-white mt-0">
+                      <i className="fa-solid fa-graduation-cap text-lg text-gray-800 dark:text-white"></i>
+                      Bachelor of Science in Computer Science · University of Central Florida
+                    </h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-300 mt-1 mb-0">
+                      Magna Cum Laude · <span className="font-bold text-green-700 dark:text-blue-300">GPA 3.93</span> · Courses in cybersecurity, software engineering, & data structures.
+                    </p>
+                  </div>
+                </div>
+              </section>
+
 
               <section
                 id="contact"
