@@ -50,7 +50,7 @@ function Navbar({ brandName, imageSrcPath, navItems, toggleDarkMode }: NavBarPro
                   : item === "LinkedIn"
                   ? "https://linkedin.com/in/hashim-alkhateeb"
                   : item === "Resume"
-                  ? "../../public/Hashim_Resume.pdf"
+                  ? "/Hashim_Resume.pdf"
                   : `#${item.toLowerCase()}`
                 }
                 target={["Github", "LinkedIn", "Resume"].includes(item) ? "_blank" : "_self"}
