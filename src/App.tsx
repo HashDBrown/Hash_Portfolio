@@ -339,7 +339,7 @@ function App() {
                     <span className="text-gray-700 dark:text-gray-200">Your message</span>
                     <textarea
                       name="message"
-                      rows="4"
+                      rows={4}
                       required
                       className="mt-1 block w-full rounded-md shadow-sm bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none px-2 py-1"
                     ></textarea>
