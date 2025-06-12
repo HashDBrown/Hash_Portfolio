@@ -32,7 +32,7 @@ function App() {
   return (
     <>
       <div className={darkMode ? 'dark' : ''}>
-        <div className="font-sans !scroll-smooth bg-gray-100 dark:bg-gray-900 transition-colors duration-300">
+        <div className="font-sans !scroll-smooth bg-gray-100   dark:bg-gray-900 transition-colors duration-300">
           <div>
             <NavBar 
             brandName=""
@@ -182,19 +182,38 @@ function App() {
                   Experience
                 </h2>
 
-              <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-1 rounded-xl transition-all duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 hover:scale-105 !opacity-90 hover:!opacity-100">
+              <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-1 mb-6 rounded-xl transition-all duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 hover:scale-105 !opacity-90 hover:!opacity-100 hover:bg-gray-100/50 dark:hover:bg-gray-900/50">
                 <span className=" col-span-1">2024 — 2025</span>
                 <div className=" col-span-3">
                   <h3 className="text-lg font-semibold text-black dark:text-white mt-0">
                     Teaching Assistant · University of Central Florida
                   </h3>
-                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-1 mb-0">
                     Helped ~80 students one-on-one each week with logic, set theory, combinatorics, and proof techniques, reinforcing patience and clear technical communication skills. Monitored the Canvas discussion board and held virtual/onsite office hours, providing first-line support for
                     homework and lab questions.
                   </p>
                 </div>
-
               </div>
+
+              <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-1 rounded-xl transition-all duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 hover:scale-105 !opacity-90 hover:!opacity-100 hover:bg-gray-100/50 dark:hover:bg-gray-900/50">
+                <span className="col-span-1">2023 — 2025</span>
+                <div className="col-span-3">
+                  <h3 className="text-lg font-semibold no-underline text-black dark:text-white mt-0">
+                    <a
+                      href="https://www.etsy.com/shop/HashEmb?ref=seller-platform-mcnav"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:text-green-700 dark:hover:text-blue-700 no-underline text-lg font-semibold"
+                    >
+                      HashEmb Embroidery Shop
+                    </a>
+                  </h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+                    Founded and operated a niche Etsy embroidery shop focused on anime-inspired apparel, reaching over 130 sales and 40+ five-star reviews. Provided direct customer support, handled order issues and product inquiries, and maintained high satisfaction—sharpening communication and problem-solving skills relevant to help desk roles.
+                  </p>
+                </div>
+              </div>
+
 
               </section>
 
@@ -205,7 +224,7 @@ function App() {
                   Projects
                 </h2>
 
-              <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-6 rounded-xl transition-all duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 hover:scale-105 !opacity-90 hover:!opacity-100">
+              <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-6 rounded-xl transition-all duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 hover:scale-105 !opacity-90 hover:!opacity-100 hover:bg-gray-100/50 dark:hover:bg-gray-900/50">
                 <span className="col-span-1">2025</span>
                 <div className="col-span-3">
                   <h3 className="text-lg font-semibold text-black dark:text-white mt-0">
@@ -241,7 +260,7 @@ function App() {
               </div>
 
 
-              <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-6 rounded-xl transition-all duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 hover:scale-105 !opacity-90 hover:!opacity-100">
+              <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-6 rounded-xl transition-all duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 hover:scale-105 !opacity-90 hover:!opacity-100 hover:bg-gray-100/50 dark:hover:bg-gray-900/50">
                 <span className=" col-span-1">2024 — 2025</span>
                 <div className=" col-span-3">
                   <h3 className="text-lg font-semibold text-black dark:text-white mt-0">

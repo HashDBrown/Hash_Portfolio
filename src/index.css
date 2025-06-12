@@ -192,3 +192,26 @@ button:focus-visible {
     --enter-stage: 20 !important;
   }
 }
+
+/* Default (light mode) */
+::selection {
+  background-color: #b6e49d; /* lime-400 */
+  color: black;
+}
+
+/* Firefox version */
+::-moz-selection {
+  background-color: #a3e635;
+  color: black;
+}
+
+/* Dark mode */
+.dark ::selection {
+  background-color: #22d3ee; /* cyan-400 */
+  color: black;
+}
+
+.dark ::-moz-selection {
+  background-color: #22d3ee;
+  color: black;
+}
