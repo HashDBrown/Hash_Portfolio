@@ -177,12 +177,12 @@ function App() {
 
               <section
               id="experience"
-              className="max-w-5xl mx-auto px-6 md:px-0 mb-24 slide-enter-content">
-                <h2 className=" titles text-left text-black dark:text-white mb-">
+              className="max-w-5xl mx-auto px-6 md:px-0 mb-3 slide-enter-content">
+                <h2 className=" titles text-left text-black dark:text-white mb-4">
                   Experience
                 </h2>
 
-              <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-6 rounded-xl transition-all duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 hover:scale-105 !opacity-90 hover:!opacity-100">
+              <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-1 rounded-xl transition-all duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 hover:scale-105 !opacity-90 hover:!opacity-100">
                 <span className=" col-span-1">2024 — 2025</span>
                 <div className=" col-span-3">
                   <h3 className="text-lg font-semibold text-black dark:text-white mt-0">
@@ -198,7 +198,50 @@ function App() {
 
               </section>
 
+              <section
+              id="projects"
+              className="max-w-5xl mx-auto px-6 md:px-0 mb-3 slide-enter-content">
+                <h2 className=" titles text-left text-black dark:text-white mt-5 mb-4">
+                  Projects
+                </h2>
 
+              <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-1 rounded-xl transition-all duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 hover:scale-105 !opacity-90 hover:!opacity-100">
+                <span className=" col-span-1">2024 — 2025</span>
+                <div className=" col-span-3">
+                  <h3 className="text-lg font-semibold text-black dark:text-white mt-0">
+                    Magneto UI
+                  </h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+                    Led a 7-member team as Project Manager using Agile and Scrum methodologies to build a web interface for MAGNETO, an automated oracle framework for Android app testing. Designed features for APK upload, test configuration, and results visualization.
+                  </p>
+                </div>
+
+                <div className="skills flex flex-wrap gap-4 mt-4 items-center">
+                  <div className="flex items-center gap-1">
+                    <img src="https://cdn.simpleicons.org/python/3776AB" alt="Python" className="w-5 h-5" />
+                    <span className="text-sm text-gray-800 dark:text-gray-100">Python</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" className="w-5 h-5" />
+                    <span className="text-sm text-gray-800 dark:text-gray-100">Docker</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <img src="https://cdn.simpleicons.org/jira/0052CC" alt="Jira" className="w-5 h-5" />
+                    <span className="text-sm text-gray-800 dark:text-gray-100">Jira</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <img src="https://cdn.simpleicons.org/react/61DAFB" alt="React" className="w-5 h-5" />
+                    <span className="text-sm text-gray-800 dark:text-gray-100">React</span>
+                  </div>
+                  <div className="flex items-center gap-1">
+                    <img src="https://cdn.simpleicons.org/tailwindcss/06B6D4" alt="TailwindCSS" className="w-5 h-5" />
+                    <span className="text-sm text-gray-800 dark:text-gray-100">Tailwind</span>
+                  </div>
+                </div>
+
+              </div>
+
+              </section>
 
             </div>
           </section>
@@ -206,16 +249,6 @@ function App() {
         </div>
       </div>
 
-
-
-
-      <html className="light">
-        <body>
-          <div className="bg-white dark:bg-black">
-
-          </div>
-        </body>
-      </html>
         
     </>
   )
