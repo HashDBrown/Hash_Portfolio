@@ -106,6 +106,8 @@ button:focus-visible {
   }
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @keyframes slide-enter {
   0% {
     transform: translateY(10px);

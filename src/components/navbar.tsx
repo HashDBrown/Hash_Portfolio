@@ -6,19 +6,20 @@ interface NavBarProps {
   brandName: string;
   imageSrcPath: string;
   navItems: string[];
+  toggleDarkMode: () => void;
 }
 
-function Navbar({ brandName, imageSrcPath, navItems }: NavBarProps) {
+function Navbar({ brandName, imageSrcPath, navItems, toggleDarkMode }: NavBarProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(-1);
 
   return (
-    <nav className="bg-white dark:bg-gray-900 shadow w-full fixed top-0 left-0 z-50">
+    <nav className="bg-white dark:bg-gray-800 shadow w-full fixed top-0 left-0 z-50">
       <div className="max-w-12xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16 items-center">
+        <div className="flex justify-between h-16 items-center cursor-pointer">
           {/* Brand */}
           <div className="flex items-center space-x-2">
-            <img src={imageSrcPath} alt="Logo" className="w-10 h-10" />
+            <img src={imageSrcPath} alt="Logo" className="w-10 h-10" onClick={toggleDarkMode}/>
             <span className="ruby-font text-xl font-bold text-gray-800 dark:text-white">{brandName}</span>
           </div>
 
@@ -55,9 +56,9 @@ function Navbar({ brandName, imageSrcPath, navItems }: NavBarProps) {
                 onClick={() => setSelectedIndex(index)}
                 className={`ruby-font !mr-0 text-sm font-medium ${
                   selectedIndex === index
-                    ? "text-blue-600 dark:text-pink-100"
-                    : "text-gray-700 dark:text-gray-300"
-                } hover:text-green-700 transition`}
+                    ? "text-blue-600 dark:text-gray-300"
+                    : "text-gray-700 dark:text-blue-300"
+                } hover:text-green-700 dark:hover:text-blue-700 transition`}
               >
                 {item === "Github" ? (
                   <>
