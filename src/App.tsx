@@ -65,7 +65,7 @@ function App() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 hover:shadow-green-700 dark:hover:shadow-blue300">
                   {/* CSAP */}
                   <a
-                    href="https://www.credly.com/earner/earned/badge/b98ce555-e215-47f2-ab4c-2cf03dbbb153"
+                    href="https://www.credly.com/badges/b98ce555-e215-47f2-ab4c-2cf03dbbb153"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block p-6 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg border border-gray-200 dark:border-gray-700 transition transform hover:-translate-y-1"
@@ -103,7 +103,7 @@ function App() {
 
                   {/* CySA+ */}
                   <a
-                    href="https://www.credly.com/earner/earned/badge/e4129dc4-6819-4b35-8271-fe06d572c736"
+                    href="https://www.credly.com/badges/e4129dc4-6819-4b35-8271-fe06d572c736"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block p-6 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg border border-gray-200 dark:border-gray-700 transition transform hover:-translate-y-1"
@@ -138,7 +138,7 @@ function App() {
 
                   {/* Security+ */}
                   <a
-                    href="https://www.credly.com/earner/earned/badge/b312f53d-d952-4fba-bf71-3035916b113a"
+                    href="https://www.credly.com/badges/b312f53d-d952-4fba-bf71-3035916b113a"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block p-6 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg border border-gray-200 dark:border-gray-700 transition transform hover:-translate-y-1"
