@@ -18,7 +18,7 @@ function Navbar({ brandName, imageSrcPath, navItems, toggleDarkMode }: NavBarPro
       <div className="max-w-12xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center cursor-pointer">
           {/* Brand */}
-          <div className="flex items-center space-x-2 slide-enter-content">
+          <div className="flex items-center space-x-2 slide-enter-content animate-shake-y animate-delay-1000 animate-duration-2000 animate-count-1 animate">
             <img src={imageSrcPath} alt="Logo" className="w-10 h-10" onClick={toggleDarkMode}/>
             <span className="ruby-font text-xl font-bold text-gray-800 dark:text-white">{brandName}</span>
           </div>
