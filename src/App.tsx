@@ -302,6 +302,59 @@ function App() {
 
               </section>
 
+              <section
+                id="contact"
+                className="max-w-5xl mx-auto px-6 md:px-0 mb-24 slide-enter-content"
+              >
+                <h2 className="titles text-left text-black dark:text-white mt-10 mb-6">
+                  Contact Me
+                </h2>
+
+                <form
+                  action="https://formspree.io/f/manjolvd"  // ← replace with your actual Formspree ID
+                  method="POST"
+                  className="grid grid-cols-1 gap-6 bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md"
+                >
+                  <label className="block">
+                    <span className="text-gray-700 dark:text-gray-200">Your name</span>
+                    <input
+                      type="text"
+                      name="name"
+                      required
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none px-2 py-1"
+                    />
+                  </label>
+
+                  <label className="block">
+                    <span className="text-gray-700 dark:text-gray-200">Your email</span>
+                    <input
+                      type="email"
+                      name="email"
+                      required
+                      className="mt-1 block w-full rounded-md border-gray-300 shadow-sm bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none px-2 py-1"
+                    />
+                  </label>
+
+                  <label className="block">
+                    <span className="text-gray-700 dark:text-gray-200">Your message</span>
+                    <textarea
+                      name="message"
+                      rows="4"
+                      required
+                      className="mt-1 block w-full rounded-md shadow-sm bg-gray-200 dark:bg-gray-700 text-gray-900 dark:text-white focus:outline-none px-2 py-1"
+                    ></textarea>
+                  </label>
+
+                  <button
+                    type="submit"
+                    className="self-start bg-green-600 dark:bg-blue-200 dark:text-black dark:hover:bg-blue-400 text-white px-6 py-2 rounded-md hover:bg-green-700 transition"
+                  >
+                    Send Message
+                  </button>
+                </form>
+              </section>
+
+
             </div>
           </section>
 
