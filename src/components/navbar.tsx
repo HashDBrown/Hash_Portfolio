@@ -28,7 +28,7 @@ function Navbar({ brandName, imageSrcPath, navItems, toggleDarkMode }: NavBarPro
             <button
               onClick={() => setIsOpen(!isOpen)}
               type="button"
-              className="text-gray-100 dark:text-white hover:text-blue-600 focus:outline-none"
+              className="text-gray-700 bg-white dark:text-gray-300 dark:bg-gray-800 hover:text-green-700 focus:outline-none border-0"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 {isOpen ? (
@@ -56,8 +56,8 @@ function Navbar({ brandName, imageSrcPath, navItems, toggleDarkMode }: NavBarPro
                 onClick={() => setSelectedIndex(index)}
                 className={`ruby-font !mr-0 text-sm font-medium ${
                   selectedIndex === index
-                    ? "text-blue-600 dark:text-gray-300"
-                    : "text-gray-700 dark:text-blue-300"
+                    ? "text-blue-600 dark:text-blue-300"
+                    : "text-gray-700 dark:text-gray-300"
                 } hover:text-green-700 dark:hover:text-blue-700 transition`}
               >
                 {item === "Github" ? (
@@ -89,7 +89,7 @@ function Navbar({ brandName, imageSrcPath, navItems, toggleDarkMode }: NavBarPro
                 }}
                 className={`block text-sm font-medium ${
                   selectedIndex === index
-                    ? "text-blue-600 dark:text-blue-400"
+                    ? "text-blue-600 dark:text-blue-300"
                     : "text-gray-700 dark:text-gray-300"
                 } hover:text-blue-500 transition`}
               >
