@@ -12,7 +12,7 @@ import 'virtual:uno.css'
 
 
 function App() {
-  let items = ["Certs", "Experience", "Skills", "Projects", "Contact", "LinkedIn", "Github"];
+  let items = ["Certs", "Experience", "Projects", "Contact", "Resume", "LinkedIn", "Github"];
   const [darkMode, setDarkMode] = useState(true);
 
   // Toggle dark mode and update <html> class

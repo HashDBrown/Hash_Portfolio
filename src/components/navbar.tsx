@@ -49,9 +49,11 @@ function Navbar({ brandName, imageSrcPath, navItems, toggleDarkMode }: NavBarPro
                   ? "https://github.com/hashdbrown"
                   : item === "LinkedIn"
                   ? "https://linkedin.com/in/hashim-alkhateeb"
+                  : item === "Resume"
+                  ? "../../public/Hashim_Resume.pdf"
                   : `#${item.toLowerCase()}`
                 }
-                target={item === "Github" ? "_blank" : "_self"}
+                target={["Github", "LinkedIn", "Resume"].includes(item) ? "_blank" : "_self"}
                 rel={item === "Github" ? "noopener noreferrer" : undefined}
                 onClick={() => setSelectedIndex(index)}
                 className={`ruby-font !mr-0 text-sm font-medium ${
