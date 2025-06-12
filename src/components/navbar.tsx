@@ -84,11 +84,17 @@ function Navbar({ brandName, imageSrcPath, navItems, toggleDarkMode }: NavBarPro
             {navItems.map((item, index) => (
               <a
                 key={item}
-                href={`#${item.toLowerCase()}`}
-                onClick={() => {
-                  setSelectedIndex(index);
-                  setIsOpen(false);
-                }}
+                href={item === "Github"
+                  ? "https://github.com/hashdbrown"
+                  : item === "LinkedIn"
+                  ? "https://linkedin.com/in/hashim-alkhateeb"
+                  : item === "Resume"
+                  ? "/Hashim_Resume.pdf"
+                  : `#${item.toLowerCase()}`
+                }
+                target={["Github", "LinkedIn", "Resume"].includes(item) ? "_blank" : "_self"}
+                rel={item === "Github" ? "noopener noreferrer" : undefined}
+                onClick={() => setSelectedIndex(index)}
                 className={`block text-sm font-medium ${
                   selectedIndex === index
                     ? "text-blue-600 dark:text-blue-300"
