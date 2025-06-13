@@ -256,6 +256,29 @@ function App() {
                     <img src="https://cdn.simpleicons.org/unocss/333333" alt="UnoCSS" className="w-5 h-5" />
                     <span className="text-sm text-gray-800 dark:text-gray-100">UnoCSS</span>
                   </div>
+                  <div className="flex items-center gap-1 ml-auto">
+                    <a
+                      href="https://github.com/HashDBrown/Hash_Portfolio"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-1 hover:opacity-80"
+                      title="View on GitHub"
+                    >
+                      {/* Light mode icon */}
+                      <img
+                        src="https://cdn.simpleicons.org/github/000000"
+                        alt="GitHub"
+                        className="w-6 h-6 block dark:hidden"
+                      />
+                      {/* Dark mode icon */}
+                      <img
+                        src="https://cdn.simpleicons.org/github/ffffff"
+                        alt="GitHub"
+                        className="w-6 h-6 hidden dark:block"
+                      />
+                      <span className="sr-only">GitHub</span>
+                    </a>
+                  </div>
                 </div>
               </div>
 
