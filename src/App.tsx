@@ -8,7 +8,7 @@ import secLogo from './assets/secLogo.png';
 import csapLogo from './assets/CompTIA_CSAP.png'
 import 'virtual:uno.css'
 import '@fortawesome/fontawesome-free/css/all.min.css';
-
+const formUrl = import.meta.env.VITE_FORMSPREE_URL;
 
 // import Github from 'grommet-icons'
 
@@ -350,7 +350,7 @@ function App() {
                 </h2>
 
                 <form
-                  action="https://formspree.io/f/manjolvd"  // ← replace with your actual Formspree ID
+                  action={formUrl} // ← replace with your actual Formspree ID
                   method="POST"
                   className="grid grid-cols-1 gap-6 bg-white dark:bg-gray-800 p-6 rounded-xl shadow-md"
                 >
