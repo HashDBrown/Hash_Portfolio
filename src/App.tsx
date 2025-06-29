@@ -6,6 +6,9 @@ import imageDark from './assets/pika.webp';
 import cysaLogo from './assets/cysaLogo.jpg';
 import secLogo from './assets/secLogo.png';
 import csapLogo from './assets/CompTIA_CSAP.png'
+import wazuhLogo from './assets/wazuh.webp';
+import suricataLogo from './assets/Suricata.png';
+import splunkLogo from './assets/splunk.webp';
 import 'virtual:uno.css'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 const formUrl = import.meta.env.VITE_FORMSPREE_URL;
@@ -246,8 +249,8 @@ function App() {
 
                   {/* Splunk */}
                   <div className="flex items-center gap-1">
-                    <img src="/src/assets/splunk.webp" alt="Splunk" className="w-5 h-5 block dark:hidden" />
-                    <img src="/src/assets/splunk.webp" alt="Splunk" className="w-5 h-5 hidden dark:block" />
+                    <img src={splunkLogo} alt="Splunk" className="w-5 h-5 block dark:hidden" />
+                    <img src={splunkLogo} alt="Splunk" className="w-5 h-5 hidden dark:block" />
                     <span className="text-sm text-gray-800 dark:text-gray-100">Splunk</span>
                   </div>
 
@@ -260,15 +263,15 @@ function App() {
 
                   {/* Wazuh */}
                   <div className="flex items-center gap-1">
-                    <img src="/src/assets/wazuh.webp" alt="Wazuh" className="w-5 h-5 block dark:hidden" />
-                    <img src="/src/assets/wazuh.webp" alt="Wazuh" className="w-5 h-5 hidden dark:block" />
+                    <img src={wazuhLogo} alt="Wazuh" className="w-5 h-5 block dark:hidden" />
+                    <img src={wazuhLogo} alt="Wazuh" className="w-5 h-5 hidden dark:block" />
                     <span className="text-sm text-gray-800 dark:text-gray-100">Wazuh</span>
                   </div>
 
                   {/* Suricata */}
                   <div className="flex items-center gap-1">
-                    <img src="/src/assets/Suricata.png" alt="Suricata" className="w-5 h-5 block dark:hidden" />
-                    <img src="/src/assets/Suricata.png" alt="Suricata" className="w-5 h-5 hidden dark:block" />
+                    <img src={suricataLogo} alt="Suricata" className="w-5 h-5 block dark:hidden" />
+                    <img src={suricataLogo} alt="Suricata" className="w-5 h-5 hidden dark:block" />
                     <span className="text-sm text-gray-800 dark:text-gray-100">Suricata</span>
                   </div>
 
