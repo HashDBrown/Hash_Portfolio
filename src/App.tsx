@@ -224,6 +224,71 @@ function App() {
                   Projects
                 </h2>
 
+
+              <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-6 rounded-xl transition-all duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 hover:scale-105 !opacity-90 hover:!opacity-100 hover:bg-gray-100/50 dark:hover:bg-gray-900/50">
+                <span className="col-span-1">2025</span>
+                <div className="col-span-3">
+                  <h3 className="text-lg font-semibold text-black dark:text-white mt-0">
+                    SOC Homelab
+                  </h3>
+                  <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
+                    Built a containerized SOC lab with Splunk, Wazuh, Suricata, and secure DNS to simulate enterprise threat monitoring. Centralized logs to detect 14 failed sudo attempts in a day, tracked file integrity changes, and responded to simulated intrusions with real-time network-based alert correlation. Fortified client privacy using Pi-hole and Unbound, blocking over 6,000 out of 35,000+ DNS queries.
+                  </p>
+                </div>
+
+                <div className="skills flex flex-wrap gap-4 mt-4 items-center">
+                  {/* Docker */}
+                  <div className="flex items-center gap-1">
+                    <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" className="w-5 h-5 block dark:hidden" />
+                    <img src="https://cdn.simpleicons.org/docker/2496ED" alt="Docker" className="w-5 h-5 hidden dark:block" />
+                    <span className="text-sm text-gray-800 dark:text-gray-100">Docker</span>
+                  </div>
+
+                  {/* Splunk */}
+                  <div className="flex items-center gap-1">
+                    <img src="/src/assets/splunk.webp" alt="Splunk" className="w-5 h-5 block dark:hidden" />
+                    <img src="/src/assets/splunk.webp" alt="Splunk" className="w-5 h-5 hidden dark:block" />
+                    <span className="text-sm text-gray-800 dark:text-gray-100">Splunk</span>
+                  </div>
+
+                  {/* Linux */}
+                  <div className="flex items-center gap-1">
+                    <img src="https://cdn.simpleicons.org/linux/000000" alt="Linux" className="w-5 h-5 block dark:hidden" />
+                    <img src="https://cdn.simpleicons.org/linux/FFFFFF" alt="Linux" className="w-5 h-5 hidden dark:block" />
+                    <span className="text-sm text-gray-800 dark:text-gray-100">Linux</span>
+                  </div>
+
+                  {/* Wazuh */}
+                  <div className="flex items-center gap-1">
+                    <img src="/src/assets/wazuh.webp" alt="Wazuh" className="w-5 h-5 block dark:hidden" />
+                    <img src="/src/assets/wazuh.webp" alt="Wazuh" className="w-5 h-5 hidden dark:block" />
+                    <span className="text-sm text-gray-800 dark:text-gray-100">Wazuh</span>
+                  </div>
+
+                  {/* Suricata */}
+                  <div className="flex items-center gap-1">
+                    <img src="/src/assets/Suricata.png" alt="Suricata" className="w-5 h-5 block dark:hidden" />
+                    <img src="/src/assets/Suricata.png" alt="Suricata" className="w-5 h-5 hidden dark:block" />
+                    <span className="text-sm text-gray-800 dark:text-gray-100">Suricata</span>
+                  </div>
+
+                  {/* Pi-hole */}
+                  <div className="flex items-center gap-1">
+                    <img src="https://cdn.simpleicons.org/pihole/96060C" alt="Pi-hole" className="w-5 h-5 block dark:hidden" />
+                    <img src="https://cdn.simpleicons.org/pihole/96060C" alt="Pi-hole" className="w-5 h-5 hidden dark:block" />
+                    <span className="text-sm text-gray-800 dark:text-gray-100">Pi-hole</span>
+                  </div>
+
+
+
+
+                </div>
+
+               
+
+              </div>
+
+
               <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-6 rounded-xl transition-all duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 hover:scale-105 !opacity-90 hover:!opacity-100 hover:bg-gray-100/50 dark:hover:bg-gray-900/50">
                 <span className="col-span-1">2025</span>
                 <div className="col-span-3">
