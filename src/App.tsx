@@ -1,3 +1,5 @@
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import { useState, useEffect } from 'react'
 import './App.css'
 import NavBar from './components/navbar.tsx'
@@ -13,9 +15,20 @@ import ccdLogo from './assets/ccdLogo.webp';
 import trees from './assets/trees.jpg';
 import 'virtual:uno.css'
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import EmblaCarousel from './EmblaCarousel'
+import type { EmblaOptionsType } from 'embla-carousel'
+import './embla.css'
+import Plinko from './assets/Horse_Plinko.jpg'
+import GTA from './assets/Lab_GTA.jpg'
+import BSides from './assets/Bside.jpg'
 const formUrl = import.meta.env.VITE_FORMSPREE_URL;
 
-// import Github from 'grommet-icons'
+const slides = [
+  { src: Plinko, alt: 'UCF Horse Plinko Event' },
+  { src: GTA, alt: 'GTA Lab Session' },
+  { src: BSides, alt: 'BSidesOrlando' },
+];
+const options: EmblaOptionsType = { loop: true };
 
 
 function App() {
@@ -356,13 +369,7 @@ function App() {
                       <img src="https://cdn.simpleicons.org/pihole/96060C" alt="Pi-hole" className="w-5 h-5 hidden dark:block" />
                       <span className="text-sm text-gray-800 dark:text-gray-100">Pi-hole</span>
                     </div>
-
-
-
-
                   </div>
-
-                
 
                 </div>
 
@@ -506,6 +513,7 @@ function App() {
                   </div>
                 </section>
 
+                <EmblaCarousel slides={slides} options={options} />
 
                 <section
                   id="contact"
