@@ -9,6 +9,7 @@ import csapLogo from './assets/CompTIA_CSAP.png'
 import wazuhLogo from './assets/wazuh.webp';
 import suricataLogo from './assets/Suricata.png';
 import splunkLogo from './assets/splunk.webp';
+import ccdLogo from './assets/ccdLogo.webp';
 import trees from './assets/trees.jpg';
 import 'virtual:uno.css'
 import '@fortawesome/fontawesome-free/css/all.min.css';
@@ -76,6 +77,52 @@ function App() {
                   </h2>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 hover:shadow-green-700 dark:hover:shadow-blue300">
+
+                    {/* CSAP */}
+                    <a
+                      href="https://www.credly.com/badges/5f76e2b6-a89d-4280-bb05-0a0ad5682e8d/public_url"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="block p-6 bg-white dark:bg-gray-800 rounded-xl shadow hover:shadow-lg border border-gray-200 dark:border-gray-700 transition transform hover:-translate-y-1"
+                      style={{ textDecoration: 'none' }}
+                    >
+                      <div className="flex gap-4">
+                        <img src={ccdLogo} alt="CSAP Badge" className="w-12 h-12 object-contain" />
+                        <div>
+                          <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-1 mt-0">
+                            Certified CyberDefender
+                          </h3>
+                    
+                          <p className="text-sm text-gray-600 dark:text-gray-400">
+                            Earned Nov. 2025 — Network Forensics, Disk Forensics, Memory Forensics, Threat Hunting
+                          </p>
+
+                        </div>
+                      </div>
+                      {/* Skills List */}
+                          <div className="skills flex flex-wrap gap-2 mt-4 no-underline">
+                            <span className=" px-3 py-1 rounded-full bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-100">
+                              Elastic Stack
+                            </span>
+                            <span className=" px-3 py-1 rounded-full bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-100">
+                              Wireshark
+                            </span>
+                            <span className=" px-3 py-1 rounded-full bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-100">
+                              Volatility
+                            </span>
+                            <span className=" px-3 py-1 rounded-full bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-100">
+                              Zimmerman Suite
+                            </span>
+                            <span className=" px-3 py-1 rounded-full bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-100">
+                              MITRE ATT&CK
+                            </span>
+                            <span className=" px-3 py-1 rounded-full bg-gray-200 text-gray-800 dark:bg-gray-700 dark:text-gray-100">
+                              Zui
+                            </span>
+                          </div>
+                    </a>
+
+
                     {/* CSAP */}
                     <a
                       href="https://www.credly.com/badges/b98ce555-e215-47f2-ab4c-2cf03dbbb153"
@@ -164,7 +211,7 @@ function App() {
                             CompTIA Security+
                           </h3>
                           <p className="text-sm text-gray-600 dark:text-gray-400">
-                            Earned Jan 2025 — Core knowledge in network defense and incident response.
+                            Earned Jan. 2025 — Core knowledge in network defense and incident response.
                           </p>
                         </div>
                       </div>
@@ -195,6 +242,22 @@ function App() {
                     Experience
                   </h2>
 
+                 <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-1 mb-6 rounded-xl transition-all duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 hover:scale-105 !opacity-90 hover:!opacity-100 hover:bg-gray-100/50 dark:hover:bg-gray-900/50">
+                  <span className=" col-span-1">2025 — 2026</span>
+                  <div className=" col-span-3">
+                    <h3 className="text-lg font-semibold text-black dark:text-white mt-0">
+                      Graduate Teaching Assistant · University of Central Florida
+                    </h3>
+                    <p className="text-sm text-gray-600 dark:text-gray-300 mt-1 mb-0">
+                      • Facilitated four weekly lab sessions for 180 students, reinforcing object oriented-programming and algorithms while
+                      sharpening my ability to clearly convey technical concepts to diverse audiences. <br />
+                      • Improved student debugging proficiency by 40% by leading 1-on-1 sessions in Java and configuring development
+                      environments. <br />
+                      • Coordinated with the professor and TAs to align lab content with lectures, ensuring consistent instruction.
+                    </p>
+                  </div>
+                </div>
+
                 <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-1 mb-6 rounded-xl transition-all duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 hover:scale-105 !opacity-90 hover:!opacity-100 hover:bg-gray-100/50 dark:hover:bg-gray-900/50">
                   <span className=" col-span-1">2024 — 2025</span>
                   <div className=" col-span-3">
@@ -202,7 +265,9 @@ function App() {
                       Teaching Assistant · University of Central Florida
                     </h3>
                     <p className="text-sm text-gray-600 dark:text-gray-300 mt-1 mb-0">
-                      Helped ~80 students one-on-one each week with logic, set theory, combinatorics, and proof techniques, reinforcing patience and clear technical communication skills. Monitored the Canvas discussion board and held virtual/onsite office hours, providing first-line support for
+                      • Helped ~80 students one-on-one each week with logic, set theory, combinatorics, and proof techniques, 
+                      reinforcing patience and clear technical communication skills. <br />
+                      • Monitored the Canvas discussion board and held virtual/onsite office hours, providing first-line support for
                       homework and lab questions.
                     </p>
                   </div>
@@ -222,7 +287,9 @@ function App() {
                       </a>
                     </h3>
                     <p className="text-sm text-gray-600 dark:text-gray-300 mt-1">
-                      Founded and operated a niche Etsy embroidery shop focused on anime-inspired apparel, reaching over 130 sales and 40+ five-star reviews. Provided direct customer support, handled order issues and product inquiries, and maintained high satisfaction—sharpening communication and problem-solving skills relevant to help desk roles.
+                      • Founded and operated a niche Etsy embroidery shop focused on anime-inspired apparel, reaching over 130 sales and 40+ five-star reviews. <br />
+                      • Provided direct customer support, handled order issues and product inquiries, and maintained high satisfaction which sharpened my
+                      communication and problem-solving skills relevant to help desk roles.
                     </p>
                   </div>
                 </div>
