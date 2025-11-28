@@ -30,7 +30,7 @@ const options: EmblaOptionsType = { loop: true };
 
 
 function App() {
-  let items = ["Certs", "Experience", "Projects", "Education", "Contact", "Resume", "LinkedIn", "Github"];
+  let items = ["Certs", "Experience", "Projects", "Education", "Gallery", "Contact", "Resume", "LinkedIn", "Github"];
   const [darkMode, setDarkMode] = useState(true);
 
   const setPageBg = (isDark: boolean) => {
@@ -511,7 +511,7 @@ function App() {
                   </div>
                 </section>
 
-                <h2 className=" titles text-left text-black dark:text-white mb-6">
+                <h2 id="gallery" className=" titles text-left text-black dark:text-white mb-6">
                   Gallery
                 </h2>
                 <EmblaCarousel slides={slides} options={options} />
