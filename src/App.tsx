@@ -511,10 +511,15 @@ function App() {
                   </div>
                 </section>
 
-                <h2 id="gallery" className=" titles text-left text-black dark:text-white mb-6">
+                <section
+                  id="gallery"
+                  className="max-w-5xl mx-auto px-6 md:px-0 mb-3 slide-enter-content"
+                > 
+                <h2 className="titles text-left text-black dark:text-white mb-6">
                   Gallery
                 </h2>
                 <EmblaCarousel slides={slides} options={options} />
+                </section>
 
                 <section
                   id="contact"
