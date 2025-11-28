@@ -18,13 +18,13 @@ import type { EmblaOptionsType } from 'embla-carousel'
 import './embla.css'
 import Plinko from './assets/Horse_Plinko.jpg'
 import GTA from './assets/Lab_GTA.jpg'
-import BSides from './assets/Bside.jpg'
+import BSides from './assets/Bside.png'
 const formUrl = import.meta.env.VITE_FORMSPREE_URL;
 
 const slides = [
-  { src: Plinko, alt: 'UCF Horse Plinko Event' },
-  { src: GTA, alt: 'GTA Lab Session' },
-  { src: BSides, alt: 'BSidesOrlando' },
+  { src: Plinko, alt: 'UCF Horse Plinko Event', caption: 'Horse Plinko 2025 hosted by Hack@UCF' },
+  { src: GTA, alt: 'GTA Lab Session', caption: 'Computer Science 2 lab session' },
+  { src: BSides, alt: 'BSidesOrlando', caption: 'BSides Orlando 2025 with my good friend Muzamil' },
 ];
 const options: EmblaOptionsType = { loop: true };
 
@@ -511,6 +511,9 @@ function App() {
                   </div>
                 </section>
 
+                <h2 className=" titles text-left text-black dark:text-white mb-6">
+                  Gallery
+                </h2>
                 <EmblaCarousel slides={slides} options={options} />
 
                 <section

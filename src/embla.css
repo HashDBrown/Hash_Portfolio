@@ -18,7 +18,7 @@
   flex: 0 0 var(--slide-size);
   min-width: 0;
   padding-left: var(--slide-spacing);
-display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -133,4 +133,27 @@ display: flex;
 }
 .embla__dot {
     color: #111827;
+}
+
+.embla__slide__caption {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+  line-height: 1.4;
+  color: #374151;
+  display: block;
+  align-items: end;
+  max-width: fit-content;
+  min-width: fit-content;
+}
+
+/* Dark mode caption color */
+.dark .embla__slide__caption {
+  color: #e5e7eb; /* gray-200 */
+}
+
+.embla__slide__inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

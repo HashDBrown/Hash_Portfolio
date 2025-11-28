@@ -12,6 +12,7 @@ import './embla.css';
 type Slide = {
   src: string;
   alt?: string;
+  caption?: string;
 };
 
 type PropType = {
@@ -39,11 +40,18 @@ const EmblaCarousel: React.FC<PropType> = (props) => {
         <div className="embla__container">
           {slides.map((slide, index) => (
             <div className="embla__slide" key={index}>
-              <img
-                src={slide.src}
-                alt={slide.alt ?? `Slide ${index + 1}`}
-                className="embla__slide__img"
-              />
+              <div className="embla__slide__inner">
+                <img
+                  src={slide.src}
+                  alt={slide.alt ?? `Slide ${index + 1}`}
+                  className="embla__slide__img"
+                />
+                {slide.caption && (
+                  <p className="embla__slide__caption">
+                    {slide.caption}
+                  </p>
+                )}
+              </div>
             </div>
           ))}
         </div>
