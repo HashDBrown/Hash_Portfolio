@@ -58,7 +58,7 @@ function App() {
       <div className={darkMode ? 'dark' : ''}>
         <div className="font-sans !scroll-smooth bg-cover bg-center bg-fixed transition-colors duration-300"
         style={{ backgroundImage: `url(${darkMode ? ponyo : trees})` } }>
-          <div className="bg-gray-50/97 dark:bg-gray-900/86 ">
+          <div className="bg-gray-50/97.8 dark:bg-gray-900/86 ">
             <div>
               <NavBar 
               brandName=""
