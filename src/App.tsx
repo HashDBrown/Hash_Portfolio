@@ -11,6 +11,7 @@ import suricataLogo from './assets/Suricata.png';
 import splunkLogo from './assets/splunk.webp';
 import ccdLogo from './assets/ccdLogo.webp';
 import trees from './assets/trees.jpg';
+import ponyo from './assets/ponyo.jpg';
 import 'virtual:uno.css'
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import EmblaCarousel from './EmblaCarousel'
@@ -55,9 +56,9 @@ function App() {
   return (
     <>
       <div className={darkMode ? 'dark' : ''}>
-        <div className="font-sans !scroll-smooth bg-fixed bg-center transition-colors duration-300"
-        style={{ backgroundImage: `url(${trees})` }}>
-          <div className="bg-gray-50/97 dark:bg-gray-900/98.5 ">
+        <div className="font-sans !scroll-smooth bg-cover bg-center bg-fixed transition-colors duration-300"
+        style={{ backgroundImage: `url(${darkMode ? ponyo : trees})` } }>
+          <div className="bg-gray-50/97 dark:bg-gray-900/86 ">
             <div>
               <NavBar 
               brandName=""
