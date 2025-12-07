@@ -20,6 +20,7 @@ import './embla.css'
 import Plinko from './assets/Horse_Plinko.jpg'
 import GTA from './assets/Lab_GTA.jpg'
 import BSides from './assets/Bside.png'
+import {WriteupsTable} from './components/ui/Writeups.tsx'
 const formUrl = import.meta.env.VITE_FORMSPREE_URL;
 
 const slides = [
@@ -70,7 +71,7 @@ function App() {
 
             <section
               id="hero"
-              className="min-h-screen flex flex-col justify-start py-40 !prose m-auto pb-8 !max-w-[72ch]"
+              className="min-h-screen flex flex-col justify-start py-40 !prose m-auto pb-8 !max-w-[80ch]"
             >
               <div className="text-left max-w-3xl slide-enter-content mr-3 ml-3">
                 <h1 className="text-black dark:text-white animate-bounce-in animate-duration-1.5s">
@@ -510,6 +511,11 @@ function App() {
                       </p>
                     </div>
                   </div>
+                </section>
+
+                <section>
+                  <WriteupsTable />
+
                 </section>
 
                 <section
