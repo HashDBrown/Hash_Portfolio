@@ -62,7 +62,7 @@ export function WriteupsTable() {
               <TableRow
                 key={w.title}
                 onClick={() => handleOpenPdf(w.url)}
-                className="cursor-pointer hover:bg-gray-50 dark:hover:bg-gray-800/70 transition"
+                className="cursor-pointer transition"
               >
                 <TableCell>
                   <div className="font-medium text-gray-900 dark:text-gray-50">
