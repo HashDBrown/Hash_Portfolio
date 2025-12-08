@@ -43,8 +43,8 @@ export function WriteupsTable() {
       </h2>
 
       <div className="p-4 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-1 mb-6 rounded-xl transition-all 
-      duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 hover:scale-105 !opacity-90 
-      hover:!opacity-100 hover:bg-gray-100/50 dark:hover:bg-gray-900/50 scale-[1.12] md:scale-100">
+      duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 md:hover:scale-105 !opacity-90 
+      hover:!opacity-100 hover:bg-gray-100/50 dark:hover:bg-gray-900/50 scale-[1.12] hover:scale-114 md:scale-100">
         <Table>
           <TableCaption className="text-xs text-gray-500 dark:text-gray-400">
             Click any row to open the full PDF write-up.
