@@ -36,13 +36,15 @@ export function WriteupsTable() {
   return (
     <section
       id="writeups"
-      className="max-w-6xl w-full mx-auto px-6 md:px-0 mb-12 slide-enter-content"
+      className="max-w-6xl w-full mx-auto px-6 md:px-0 mb-12 slide-enter-content opacity-90"
     >
       <h2 className="titles text-left text-black dark:text-white mb-4">
         Lab Write-ups
       </h2>
 
-      <div className="rounded-xl border border-gray-200 dark:border-gray-800 bg-white/80 dark:bg-gray-900/80 backdrop-blur">
+      <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-1 mb-6 rounded-xl transition-all 
+      duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 hover:scale-105 !opacity-90 
+      hover:!opacity-100 hover:bg-gray-100/50 dark:hover:bg-gray-900/50">
         <Table>
           <TableCaption className="text-xs text-gray-500 dark:text-gray-400">
             Click any row to open the full PDF write-up.
