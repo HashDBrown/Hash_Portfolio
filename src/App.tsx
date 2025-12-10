@@ -20,7 +20,7 @@ import './embla.css'
 import Plinko from './assets/Horse_Plinko.jpg'
 import GTA from './assets/Lab_GTA.jpg'
 import BSides from './assets/Bside.png'
-import {WriteupsTable} from './components/ui/Writeups.tsx'
+
 const formUrl = import.meta.env.VITE_FORMSPREE_URL;
 
 const slides = [
@@ -514,7 +514,75 @@ function App() {
                 </section>
 
                 <section>
-                  <WriteupsTable />
+                  <h2 className="titles text-left text-black dark:text-white mb-4">
+                    Lab Writeups
+                  </h2>
+                
+                    <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-1 mb-6 rounded-xl transition-all
+                     duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 
+                     hover:scale-105 !opacity-90 hover:!opacity-100 hover:bg-gray-100/50 dark:hover:bg-gray-900/50 cursor-pointer"
+                     onClick={() =>
+                      window.open('/writeups/CD_WebStrike_WriteUp.pdf', '_blank', 'noopener,noreferrer')
+                    }>
+                      <span className="col-span-1">Dec 2025</span>
+                      <div className="col-span-3">
+                        <h3 className="text-lg font-semibold flex items-center gap-2 text-black dark:text-white mt-0">
+                          <img src="https://cdn.simpleicons.org/cyberdefenders/335EEA" alt="wireshark" className="w-5 h-5" />
+                          WebStrike · CyberDefenders
+                        </h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-300 mt-1 mb-1">
+                          I analyzed a web server compromise using a PCAP in Wireshark, identified the attacker and victim, 
+                          and traced how a malicious web shell was uploaded and used. This lab shows that I can work with raw network traffic, 
+                          separate normal activity from suspicious behavior, and explain what happened in a clear, written incident summary.
+                        </p>
+                        <div className="skills flex flex-wrap gap-4 mt-4 items-center">
+                          <div className="flex items-center gap-1 px-3 py-1 rounded-full bg-gray-200 dark:bg-gray-700 dark:text-gray-100 ">
+                            <img src="https://cdn.simpleicons.org/wireshark/1679A7" alt="wireshark" className="w-5 h-5" />
+                            <span className="text-sm text-gray-800 dark:text-gray-100">Wireshark</span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <span className="text-sm text-gray-800 px-3 py-1 rounded-full bg-gray-200 dark:bg-gray-700 dark:text-gray-100">Network Forensics</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-1 mb-6 rounded-xl transition-all
+                     duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 
+                     hover:scale-105 !opacity-90 hover:!opacity-100 hover:bg-gray-100/50 dark:hover:bg-gray-900/50 cursor-pointer"
+                     onClick={() =>
+                      window.open('https://cyberdefenders.org/blueteam-ctf-challenges/achievements/HashDBrown/revengehotels-apt/', '_blank', 'noopener,noreferrer')
+                    }>
+                      <span className="col-span-1">Dec 2025</span>
+                      <div className="col-span-3">
+                        <h3 className="text-lg font-semibold flex items-center gap-2 text-black dark:text-white mt-0">
+                          <img src="https://cdn.simpleicons.org/cyberdefenders/335EEA" alt="wireshark" className="w-5 h-5" />
+                          RevengeHotels APT · CyberDefenders
+                        </h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-300 mt-1 mb-1">
+                          I investigated an APT-style intrusion in a hotel environment using Sysmon logs, Strings, and Timeline Explorer. 
+                          I followed the attack from initial access through persistence and data access attempts, 
+                          explaining how each step was identified and validated. Walkthrough will be uploaded once the lab is retired. 
+                        </p>
+                        <div className="skills flex flex-wrap gap-4 mt-4 items-center">
+                          <div className="flex items-center gap-1">
+                            <span className="text-sm text-gray-800 px-3 py-1 rounded-full bg-gray-200 dark:bg-gray-700 dark:text-gray-100">Sysmon Logs</span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <span className="text-sm text-gray-800 px-3 py-1 rounded-full bg-gray-200 dark:bg-gray-700 dark:text-gray-100">Timeline Explorer</span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <span className="text-sm text-gray-800 px-3 py-1 rounded-full bg-gray-200 dark:bg-gray-700 dark:text-gray-100">MITRE ATT&CK</span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <span className="text-sm text-gray-800 px-3 py-1 rounded-full bg-gray-200 dark:bg-gray-700 dark:text-gray-100">Endpoint Forensics</span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <span className="text-sm text-gray-800 px-3 py-1 rounded-full bg-gray-200 dark:bg-gray-700 dark:text-gray-100"> Cyber Chef</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
 
                 </section>
 

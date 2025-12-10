@@ -26,6 +26,14 @@ const writeups: Writeup[] = [
     tools: ['Wireshark'],
     url: '/writeups/CD_WebStrike_WriteUp.pdf',
   },
+  {
+    title: 'RevengeHotels APT',
+    date: 'Dec 2025',
+    labType: 'CyberDefenders',
+    focus: 'Reconstruct multi-stage APT attack chain using Sysmon Logs and Strings',
+    tools: ['Sysmon Logs', 'Strings', 'Timeline Explorer'],
+    url: '',
+  },
 ]
 
 export function WriteupsTable() {
