@@ -513,7 +513,8 @@ function App() {
                   </div>
                 </section>
 
-                <section>
+                <section className="max-w-5xl mx-auto px-6 md:px-0 mb-3 slide-enter-content">
+                  
                   <h2 className="titles text-left text-black dark:text-white mb-4">
                     Lab Writeups
                   </h2>
