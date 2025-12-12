@@ -552,6 +552,38 @@ function App() {
                      duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 
                      hover:scale-105 !opacity-90 hover:!opacity-100 hover:bg-gray-100/50 dark:hover:bg-gray-900/50 cursor-pointer"
                      onClick={() =>
+                      window.open('/writeups/AWSRaid_Lab.pdf', '_blank', 'noopener,noreferrer')
+                    }>
+                      <span className="col-span-1">Dec 2025</span>
+                      <div className="col-span-3">
+                        <h3 className="text-lg font-semibold flex items-center gap-2 text-black dark:text-white mt-0">
+                          <img src="https://cdn.simpleicons.org/cyberdefenders/335EEA" alt="wireshark" className="w-5 h-5" />
+                          AWSRaid · CyberDefenders
+                        </h3>
+                        <p className="text-sm text-gray-600 dark:text-gray-300 mt-1 mb-1">
+                          I investigated a compromised AWS environment using Splunk to analyze CloudTrail logs and reconstruct 
+                          the attacker's kill chain. I identified the initial entry point via a targeted brute-force attack, 
+                          traced the attacker's lateral movement, and uncovered their data exfiltration activities and persistence mechanisms. 
+                        </p>
+                        <div className="skills flex flex-wrap gap-4 mt-4 items-center">
+                          <div className="flex items-center gap-1 px-3 py-1 rounded-full bg-gray-200 dark:bg-gray-700 dark:text-gray-100 ">
+                            <img src={splunkLogo} alt="Splunk" className="w-5 h-5 block dark:hidden" />
+                            <img src={splunkLogo} alt="Splunk" className="w-5 h-5 hidden dark:block" />
+                            <span className="text-sm text-gray-800 dark:text-gray-100">Splunk</span>
+                          </div>
+                          <div className="flex items-center gap-1">
+                            <span className="text-sm text-gray-800 px-3 py-1 rounded-full bg-gray-200 dark:bg-gray-700 dark:text-gray-100">
+                              Cloud Forensics
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div className="p-6 text-black dark:text-white grid-cols-4 grid-rows-3 gap-4 mt-1 mb-6 rounded-xl transition-all
+                     duration-300 transform border border-transparent hover:border-green-700 dark:hover:border-blue-300 
+                     hover:scale-105 !opacity-90 hover:!opacity-100 hover:bg-gray-100/50 dark:hover:bg-gray-900/50 cursor-pointer"
+                     onClick={() =>
                       window.open('https://cyberdefenders.org/blueteam-ctf-challenges/achievements/HashDBrown/revengehotels-apt/', '_blank', 'noopener,noreferrer')
                     }>
                       <span className="col-span-1">Dec 2025</span>
