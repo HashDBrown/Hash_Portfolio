@@ -20,6 +20,7 @@ import './embla.css'
 import Plinko from './assets/Horse_Plinko.jpg'
 import GTA from './assets/Lab_GTA.jpg'
 import BSides from './assets/Bside.png'
+import { usePing } from './hooks/usePing';
 
 const formUrl = import.meta.env.VITE_FORMSPREE_URL;
 
@@ -32,6 +33,7 @@ const options: EmblaOptionsType = { loop: true };
 
 
 function App() {
+  usePing();
   let items = ["Certs", "Experience", "Projects", "Education", "Gallery", "Contact", "Resume", "LinkedIn", "Github"];
   const [darkMode, setDarkMode] = useState(true);
 
