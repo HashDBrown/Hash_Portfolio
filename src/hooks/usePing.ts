@@ -9,20 +9,20 @@ export function usePing() {
     const params = new URLSearchParams(window.location.search);
 
     fetch('/api/ping', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
         path: window.location.pathname,
         referrer: document.referrer || 'direct',
         screen: `${window.screen.width}x${window.screen.height}`,
         language: navigator.language,
         utm: {
-          source: params.get('utm_source'),
-          medium: params.get('utm_medium'),
-          campaign: params.get('utm_campaign'),
+        source: params.get('source') || params.get('utm_source'),
+        medium: params.get('medium') || params.get('utm_medium'),
+        campaign: params.get('campaign') || params.get('utm_campaign'),
         },
-      }),
-      keepalive: true,
+    }),
+    keepalive: true,
     }).catch(() => {});
   }, []);
 }
