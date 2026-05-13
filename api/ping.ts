@@ -77,8 +77,7 @@ export default async function handler(request: Request) {
 
   const webhook = process.env.DISCORD_WEBHOOK;
   if (webhook) {
-    // fire and forget
-    fetch(webhook, {
+    await fetch(webhook, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ embeds: [embed] }),
